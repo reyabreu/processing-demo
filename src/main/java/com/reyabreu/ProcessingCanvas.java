@@ -9,6 +9,14 @@ import org.springframework.stereotype.Component;
 
 import processing.core.PApplet;
 
+/**
+ * This is what would usually be written inside Processing's PDE editor. Note that we can use
+ * annotations and other powerful features of Spring, including integration with Java Swing's
+ * utility libraries.
+ * 
+ * @author Reynaldo.A
+ *
+ */
 @Component
 public class ProcessingCanvas extends PApplet
 {

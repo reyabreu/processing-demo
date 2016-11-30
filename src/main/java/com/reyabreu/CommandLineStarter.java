@@ -5,6 +5,12 @@ import org.springframework.stereotype.Component;
 
 import processing.core.PApplet;
 
+/**
+ * Creates the main Processing UI with standard starter methods.
+ * 
+ * @author Reynaldo.A
+ *
+ */
 @Component
 public class CommandLineStarter implements CommandLineRunner
 {
@@ -12,8 +18,7 @@ public class CommandLineStarter implements CommandLineRunner
   @Override
   public void run(String... args) throws Exception
   {
-    PApplet.main(ProcessingCanvas.class);
-    // Toolkit.getDefaultToolkit().setDynamicLayout(true);
+    PApplet.main(ProcessingCanvas.class, args);
   }
 
 }
